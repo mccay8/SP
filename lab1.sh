@@ -6,19 +6,19 @@ echo -n "Directory is empty, bye!"
 exit
 fi
 
-while:
+while :
 do
 echo "current directory name: "$PWD
 echo
 
 echo -n "Enter file name: "
 read filename
-if [-e $filename]
+if [ -e $filename ]
 then 
 echo -n "Enter the date (yyy-mm-dd): "
 read data
-data1=$(date - d 2021-02-23)
-if [ $dara -ge $data1]
+data1=$(date -d 2021-02-23)
+if [ $data -ge $data1 ]
 then
 echo "The file has not been formated....Closing"
 echo
@@ -45,7 +45,5 @@ else
 echo "error"
 fi
 done
-done
-
 
 
